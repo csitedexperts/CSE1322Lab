@@ -11,16 +11,18 @@ public class PalindromeTest {
 		while (another.equalsIgnoreCase("y")) // allows y or Y
 		{
 			System.out.println ("Enter a potential palindrome string:");
-			str = scan.nextLine();
+			str = scan.nextLine();   // madam
 			left = 0;
-			right = str.length() - 1;
+			right = str.length() - 1;  // 4
+
 			while (str.charAt(left) == str.charAt(right) && left < right)
 			{     
-				left = left + 1;
-				right = right - 1;     
+				left = left + 1;   // 1  // 2
+				right = right - 1;     // 3  // 2
 			}
+			
 			System.out.println();
-			if (left < right)
+			if (left < right)  // 2 == 2
 				System.out.println ("That string is NOT a palindrome.");
 			else
 				System.out.println ("That string IS a palindrome.");
